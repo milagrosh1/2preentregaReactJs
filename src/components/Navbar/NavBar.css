@@ -1,0 +1,107 @@
+:root{
+    --color-txt-nav:  #6C785C
+
+
+}
+
+
+body {
+
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bolder;
+
+}
+
+header{
+    background-color: white;
+    z-index: 5;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    border-bottom: 1px solid black ;
+    display: flex;
+    
+}
+/*containerBrand*/
+header .containerBrand{
+   
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    ;
+}
+header .containerBrand img{
+ transform:scale(0.8);
+}
+
+/*containerlist*/
+header .containerListaItems{
+  
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .containerListaItems ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+header .containerListaItems ul li{
+
+    margin: 1rem;
+    color: var(--color-txt-nav);
+    cursor: pointer;
+    
+
+
+}
+
+/*containerCards*/
+header .containerCart{
+  
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  min-width: 72px;
+
+}
+header .containerCart .containerLength{ 
+background-color:#6c785c48;
+width: 45px;
+height: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+cursor: pointer;
+
+}
+header .containerCart .containerLength .cantCart{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-txt-nav);
+    color: white;
+    text-align: center;
+    top: 0;
+    left: 80%;
+    border-radius: 50%;
+
+ }
+ .sub{
+
+    text-align: center;
+    color: rgb(0, 0, 0);
+ }

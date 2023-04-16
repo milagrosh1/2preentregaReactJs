@@ -1,8 +1,7 @@
 import Brand from "../Brand";
-import ItemListContainer from "..//ItemlistContainer/ItemsListContainer";
+import './NavBar.css'
+import { NavLink, Link } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
-import ListaItems from "./ListaItems";
-
 
 const NavBar = () => {
    return (
@@ -15,14 +14,24 @@ const NavBar = () => {
 
 <nav className= "containerListaItems"> 
    
-   <ListaItems
 
-    ItemUno= "Cuadros"
-    ItemDos= "Impresiones"
-    ItemTres= "Accesorios"
-    ItemCuatro= "álbumes"
+      <Link to={"/"}>
+        
+      </Link>
+      <ul>
+      <li>
+          <NavLink to={`/categoria/1`}>Servicios</NavLink>
+        </li>
 
-/>
+        <li>
+          <NavLink to={`/categoria/2`}>Impresiones</NavLink>
+        </li>
+
+        <li>
+          <NavLink to={`/categoria/3`} >Albumes</NavLink>
+        </li>
+      </ul>
+
 
 </nav>
 

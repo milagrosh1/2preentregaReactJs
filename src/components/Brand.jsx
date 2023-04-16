@@ -1,4 +1,4 @@
-import brand from ".././img/Brand.svg";
+import brand from "../../src/brand1.svg";
 
 
 const Brand = () => {

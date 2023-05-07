@@ -18,19 +18,16 @@ const Checkout = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        // Validar que los campos estén completos
         if (!nombre || !apellido || !telefono || !email || !emailConfirmacion) {
             setError("Por favor complete todos los campos.");
             return;
         }
 
-        // Validar que los campos de email coincidan
         if (email !== emailConfirmacion) {
             setError("Los campos de correo electrónico no coinciden.");
             return;
         }
 
-        // Crear objeto de orden
         const orden = {
             items: carrito.map((producto) => ({
                 id: producto.item.id,
@@ -47,8 +44,6 @@ const Checkout = () => {
             email,
         };
 
-
-        // Guardar la orden en Firebase
         addDoc(collection(db, "ordenes"), orden)
             .then((docRef) => {
                 setOrdenId(docRef.id);
@@ -76,9 +71,7 @@ const Checkout = () => {
                         <hr />
                     </div>
                 ))}
-                {
-                    //<p>Total: ${total}</p>
-                }
+
                 <hr />
                 <div>
                     <label>

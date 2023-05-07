@@ -4,39 +4,42 @@ import '../Navbar/NavBar.css'
 import { NavLink, Link } from "react-router-dom";
 import logo from "../../img/Brand.svg"
 const NavBar = () => {
-   
-return (
+
+  return (
     <>
-        <header className='logo'>
-    <nav className="nav-bar">
-        <Link to={"/"}>
-        <img href="" src={logo} className="logo-medidas" alt="" />
-        </Link>
-        <ul className="nav-item">
-      <li>
-          <NavLink to={`/categoria/servicios`}>Servicios</NavLink>
-        </li>
+      <header className='logo'>
 
-        <li>
-          <NavLink to={`/categoria/impresiones`}>Impresiones</NavLink>
-        </li>
+        <nav className="nav-bar">
 
-        <li>
-          <NavLink to={`/categoria/albumes`} >Albumes</NavLink>
-        </li>
-      </ul>
+          <Link to={"/"}>
+            <img href="" src={logo} className="logo-medidas" alt="" />
+          </Link>
+
+          <ul className="nav-item">
+            <li>
+              <NavLink className='navLinks' to={`/categoria/servicios`}>Servicios</NavLink>
+            </li>
+
+            <li>
+              <NavLink className='navLinks' to={`/categoria/impresiones`}>Impresiones</NavLink>
+            </li>
+
+            <li>
+              <NavLink className='navLinks' to={`/categoria/albumes`} >Albumes</NavLink>
+            </li>
+          </ul>
+
+          <CartWidget />
+
+        </nav>
+
+      </header>
 
 
-      
-        
-        </nav>  
-        
-    </header>
-    
-    
-    <CartWidget/>
+
+
     </>
-    )
-    }
-    
-    export default NavBar
+  )
+}
+
+export default NavBar

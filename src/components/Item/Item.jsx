@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const Item = ({nombre,id,precio,img,stock}) => {
+    console.log(img)
 
     return (
         <div className='prod'>

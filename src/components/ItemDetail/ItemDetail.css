@@ -2,12 +2,10 @@
     text-align: center;
     border: 1px solid #000000;
     margin: 3rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a b";
     justify-content: space-evenly;
-}
-
-img {
-    width: 25vw;
 }
 
 .contador{
@@ -15,4 +13,6 @@ img {
 }
 
 .imgCant{
-    padding-left: 50px;}
+    grid-area: b;
+    width: 100%;
+}

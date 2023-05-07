@@ -1,8 +1,6 @@
 .contador{
-    position: relative;
-    bottom: 1rem;
-    left: 0.2rem;
-    color: black;
+display: flex;
+flex-direction: column;
 }
 
 svg{

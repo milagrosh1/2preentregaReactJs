@@ -31,7 +31,7 @@ const ItemDetail = ({ id, nombre, precio, img, stock }) => {
                 <h3> ID: {id} </h3>
                 <h3>Stock: {stock}</h3>
                 <p className='parrafo'><br /> Sesion fotografica de eventos Premium Casamientos, Bautismos,Cumpleaños, Empresas. <br /> Este es un procesaor que esta en excelente funcionamiento <br /> Este es un procesaor que esta en excelente funcionamiento <br /> </p>
-                <div className='contador'>
+                <div>
 
                     {
                         agregarCantidad > 0 ? (<Link to="/cart"> Terminar compra </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)

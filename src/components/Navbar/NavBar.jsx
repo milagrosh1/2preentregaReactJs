@@ -14,15 +14,15 @@ return (
         </Link>
         <ul className="nav-item">
       <li>
-          <NavLink to={`/categoria/1`}>Servicios</NavLink>
+          <NavLink to={`/categoria/servicios`}>Servicios</NavLink>
         </li>
 
         <li>
-          <NavLink to={`/categoria/2`}>Impresiones</NavLink>
+          <NavLink to={`/categoria/impresiones`}>Impresiones</NavLink>
         </li>
 
         <li>
-          <NavLink to={`/categoria/3`} >Albumes</NavLink>
+          <NavLink to={`/categoria/albumes`} >Albumes</NavLink>
         </li>
       </ul>
 
